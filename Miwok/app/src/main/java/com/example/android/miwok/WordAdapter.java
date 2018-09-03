@@ -39,7 +39,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         TextView miwokWord = (TextView)myview.findViewById(R.id.miwokword);
         TextView englishWord = (TextView)myview.findViewById(R.id.englishword);
-        LinearLayout layoutouter = (LinearLayout)myview.findViewById((R.id.layoutouter));
+        RelativeLayout layoutouter = (RelativeLayout)myview.findViewById((R.id.layoutouter));
 
         miwokWord.setText(currentWord.getMiwokTranslation());
         englishWord.setText(currentWord.getDefaultTranslation());

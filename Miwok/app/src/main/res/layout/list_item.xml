@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,7 +8,7 @@
     android:layout_marginLeft="16dp"
     tools:ignore="InvalidId">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/layoutouter">
@@ -22,7 +21,7 @@
 
         <RelativeLayout
             android:id="@+id/layout2"
-            android:layout_width="230dp"
+            android:layout_width="match_parent"
             android:layout_height="@dimen/list_item_height"
             android:layout_toRightOf="@id/image"
             android:gravity="center_vertical">
@@ -34,6 +33,7 @@
                 android:layout_marginLeft="16dp"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="#FFF"
+                android:layout_marginRight="50dp"
                 android:textStyle="bold" />
 
             <TextView
@@ -42,15 +42,18 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/miwokword"
                 android:layout_marginLeft="16dp"
+                android:layout_marginRight="50dp"
                 android:textColor="#FFF" />
 
         </RelativeLayout>
+
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center|center_vertical"
             android:src="@drawable/play"
-            android:layout_toRightOf="@id/englishword"
-            android:layout_gravity="center_vertical"
-            android:layout_marginRight="30dp"/>
-    </LinearLayout>
+            android:layout_marginRight="16dp" />
+    </RelativeLayout>
 </LinearLayout>
